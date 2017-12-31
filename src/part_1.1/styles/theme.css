@@ -1,0 +1,285 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.blue {
+  min-height: 65vh;
+  position: absolute;
+  width: 100%;
+  z-index: -2;
+  background-color: rgb(83, 150, 187);
+}
+html {
+  color: gray;
+  min-height: 100vh;
+  background-color: white;
+}
+body {
+
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  flex-direction: center;
+  height: 70px;
+}
+nav ul {
+  list-style-type: none;
+  /* padding: 0; */
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  line-height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+.right {
+  position: absolute;
+  right: 10px;
+}
+
+.menu-button {
+  background-color: white;
+  margin: 0;
+  padding: 10px;
+  border-radius: 100%;
+  width: 40px;
+  line-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-button i {
+  color: rgb(83, 150, 187);
+}
+.slide-out a {
+  color: gray;
+}
+.slide-out a:hover {
+  color: rgb(83, 150, 187);
+}
+
+.slide-out li {
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+  min-height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.slide-out {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  height: 100%;
+  width: 20%;
+  max-width: 300px;
+  background-color: white;
+  color: gray;
+  transform: translateX(105%);
+  will-change: transform;
+
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+
+}
+.slide-out-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  height: 120vh;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 997;
+  display: none;
+
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+.sidenav-close {
+  cursor: pointer;
+  height: 65px !important;
+  line-height: 65px !important;
+  background-color: rgb(83, 150, 187);
+  color: white;
+}
+.container {
+  background-color: white;
+  padding: 20px;
+  min-height: 300px;
+  width: 75%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.2)
+}
+.container > div{
+  display: flex;
+  justify-content: center;
+}
+form {
+  background-color: white;
+  padding: 15px;
+  min-height: 300px;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+form button {
+  background-color: rgb(83, 150, 187);
+  border: 0;
+  padding: 0 10px;
+  margin: 10px;
+  color: white;
+  flex-flow: right;
+}
+form input {
+  padding: 10px;
+  background-color: rgba(83, 150, 187,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 0;
+  margin: 10px;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+}
+
+
+table {
+  padding: 15px;
+}
+table th {
+
+  background-color: #aaa;
+  border: 0;
+  padding: 10px;
+  text-align: center;
+}
+td {
+  padding: 10px;
+  text-align: center;
+}
+table a {
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: inherit;
+}
+.table-icon {
+  cursor: pointer;
+}
+.usersBox-enabled {
+  background-color: rgba(83, 150, 187,0.5);
+  text-align: left;
+  border: 0;
+  padding: 5px;
+  font-size: 1rem;
+}
+.usersBox-disabled {
+  border: 0;
+  background-color: transparent;
+  text-align: center;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.hide {
+  visibility: hidden;
+  position: absolute;
+  top:0;
+}
+.no-padding {
+  padding: 0 !important;
+}
+
+
+.collapsible-header {
+  display: inherit;
+}
+.collapsible-body {
+  height: 0.01px;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+.arrowI {
+  color: gray;
+}
+.arrowI {
+  align-items: center;
+  text-align: center;
+  padding: 14px;
+  right: 0px;
+  z-index: -1;
+  margin: 0px;
+  width: 40px;
+  background-color: rgb(238, 238, 238);
+  height: 48px;
+  line-height: 48px;
+  font-size: 1.6rem;
+display: inline-block;
+}
+
+#result {
+  min-height: 0px;
+  padding: 0;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+.result-grow {
+  height: 100px !important;
+  padding: 15px !important;
+}
