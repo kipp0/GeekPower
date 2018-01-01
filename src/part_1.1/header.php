@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>GeekPower</title>
     <link rel="stylesheet" href="./styles/theme.css">
+    <link rel="stylesheet" href="./styles/jquery-ui.min.css">
+    <script src="https://use.fontawesome.com/96b9f04cc8.js"></script>
   </head>
   <body>
     <div class="blue"></div>

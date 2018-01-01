@@ -11,14 +11,14 @@
           </p>
           <br>
           <p>
-            As you have probably already noticed there are three additional links added to this projects navigation bar simply for making it easier to navigate between each assignment.
-            I would also like to mention that I have purposefully decided to build each animation diffrently.<br><br> For reveiling and hidding the navigation bar on the side I have
-            used the built in JS setInterval() and clearInterval(), and for reveiling and hidding the accordion I used CSS and a little bit of javascript for adding and removing the classes.
+            There are three additional links added to this projects navigation bar in order to make it easier to navigate between each assignment.
+            I have decided to build each animation differently to demonstrate multiple solutions.<br><br> To reveal and hide the navigation bar on the right side,
+            I used the built-in setInterval() and clearInterval() functions.
+            Furthermore, for the accordion, I used CSS and javascript for adding and removing classes.
           </p>
           <br>
           <p>
-            As far as my decision goes for building the layout. I went with flexbox and the traditional absolute positioning for a more speedy development.
-            I am fully aware of CSS' new grid layout option but I didn't think it to be necessary for such a simple UI.
+            I used Flexbox and traditional absolute positioning due to the simplicity of this assignments layout.
           </p>
        </div>
        </div>
@@ -26,4 +26,5 @@
     </section>
 
   </main>
+<?php include_once('./scripts.php') ?>
 <?php include_once('./footer.php') ?>

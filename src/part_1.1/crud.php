@@ -35,5 +35,6 @@
       </div>
     </section>
   </main>
+  <?php include_once('./scripts.php') ?>
   <script src="js/crud.js" type="text/javascript"></script>
 <?php include_once('./footer.php') ?>
